@@ -1,0 +1,53 @@
++--------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------+
+| Command                                          | Description                                                | Example                                                          |
++--------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------+
+| git init                                          | Initialize a new Git repository                            | git init                                                         |
+| git clone <repository-url>                        | Clone a repository                                         | git clone https://github.com/user/repo.git                        |
+| git status                                        | Show the status of files (staged, modified, etc.)          | git status                                                       |
+| git log                                           | Show commit history                                        | git log                                                          |
+| git diff                                          | Show changes not yet staged                                | git diff                                                         |
+| git add <file-name>                               | Stage a file for commit                                    | git add index.html                                                |
+| git add .                                         | Stage all changes for commit                               | git add .                                                         |
+| git reset <file-name>                             | Unstage a file (remove from staging area)                  | git reset index.html                                              |
+| git commit -m "message"                           | Commit changes with a message                              | git commit -m "Fix header issue"                                  |
+| git commit -a -m "message"                        | Commit all changes (automatically stages tracked files)    | git commit -a -m "Update CSS styles"                              |
+| git commit --amend                                | Amend the last commit (edit commit message or add changes) | git commit --amend                                                |
+| git branch <branch-name>                          | Create a new branch                                        | git branch feature-x                                              |
+| git checkout <branch-name>                        | Switch to another branch                                   | git checkout feature-x                                            |
+| git checkout -b <branch-name>                     | Create and switch to a new branch                          | git checkout -b feature-x                                         |
+| git branch                                        | List all branches                                          | git branch                                                        |
+| git merge <branch-name>                           | Merge another branch into the current branch               | git merge feature-x                                               |
+| git branch -d <branch-name>                       | Delete a branch                                            | git branch -d feature-x                                           |
+| git remote add origin <repository-url>            | Add a remote repository                                    | git remote add origin https://github.com/user/repo.git            |
+| git remote -v                                     | View remote repository URLs                                | git remote -v                                                     |
+| git fetch                                         | Fetch updates from the remote repository                   | git fetch                                                        |
+| git pull origin <branch-name>                     | Pull changes from the remote repository                    | git pull origin main                                              |
+| git push origin <branch-name>                     | Push local changes to the remote repository                | git push origin feature-x                                         |
+| git push -u origin <branch-name>                  | Push and set up tracking for a new branch                  | git push -u origin feature-x                                      |
+| git push origin --delete <branch-name>            | Delete a remote branch                                     | git push origin --delete feature-x                                |
+| git checkout -- <file-name>                       | Discard local changes in a file (revert to last commit)    | git checkout -- index.html                                        |
+| git reset --soft HEAD~1                           | Undo last commit but keep changes (soft reset)             | git reset --soft HEAD~1                                           |
+| git reset <file-name>                             | Unstage changes (keep in working directory)                | git reset index.html                                              |
+| git stash                                         | Save changes without committing them                        | git stash                                                        |
+| git stash apply                                   | Apply the most recent stash                                | git stash apply                                                   |
+| git stash list                                    | List all stashes                                           | git stash list                                                    |
+| git stash drop <stash-id>                         | Remove a specific stash                                    | git stash drop stash@{0}                                           |
+| git show <commit-id>                              | Show details of a specific commit                          | git show abc123                                                   |
+| git log <file-name>                               | Show commit history for a specific file                    | git log index.html                                                |
+| git diff <file-name>                              | Show changes in a specific file                            | git diff index.html                                               |
+| git tag <tag-name>                                | Create a new tag                                           | git tag v1.0                                                      |
+| git push origin --tags                            | Push all tags to the remote repository                     | git push origin --tags                                            |
+| git tag -d <tag-name>                             | Delete a local tag                                         | git tag -d v1.0                                                   |
+| git rm <file-name>                                | Remove a file from the working directory and stage for commit | git rm index.html                                               |
+| git rm --cached <file-name>                       | Remove a file from the staging area but keep it locally    | git rm --cached index.html                                        |
+| git mv <old-filename> <new-filename>               | Rename or move a file                                      | git mv oldname.txt newname.txt                                    |
+| git ls-files                                      | Show all tracked files in the repository                   | git ls-files                                                      |
+| git clean -n                                      | Preview which files would be deleted by git clean          | git clean -n                                                      |
+| git clean -f                                      | Remove untracked files from the working directory          | git clean -f                                                      |
+| git clean -fd                                     | Remove untracked files and directories                     | git clean -fd                                                     |
+| git diff --staged                                 | Show the changes that are staged for the next commit       | git diff --staged                                                 |
+| git commit --no-edit                              | Commit changes without editing the commit message          | git commit --no-edit                                              |
+| git reflog                                        | View the history of the HEAD (can recover lost commits)    | git reflog                                                        |
+| git cherry-pick <commit-id>                       | Apply the changes from a specific commit to the current branch | git cherry-pick abc123                                          |
+| git bisect                                       | Find the commit that introduced a bug using binary search  | git bisect start, git bisect bad, git bisect good abc123          |
++--------------------------------------------------+------------------------------------------------------------+------------------------------------------------------------------+
