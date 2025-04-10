@@ -1,0 +1,31 @@
+# Git Commands Cheatsheet
+
+| **Command**                      | **Description**                               | **Example**                                |
+|----------------------------------|-----------------------------------------------|--------------------------------------------|
+| `git init`                       | Initialize a new Git repository               | `git init`                                 |
+| `git clone <url>`                | Clone a repository from a remote URL          | `git clone https://github.com/user/repo.git` |
+| `git status`                     | Show the working directory status             | `git status`                               |
+| `git add <file>`                 | Add a file to the staging area                | `git add file.txt`                         |
+| `git add .`                      | Add all changes to the staging area           | `git add .`                                |
+| `git commit -m "<message>"`      | Commit changes with a message                 | `git commit -m "Initial commit"`           |
+| `git log`                        | Show commit history                           | `git log`                                  |
+| `git branch`                     | List all branches                             | `git branch`                               |
+| `git branch <branch-name>`       | Create a new branch                           | `git branch feature-branch`                |
+| `git checkout <branch-name>`     | Switch to a branch                            | `git checkout feature-branch`              |
+| `git checkout -b <branch-name>`  | Create and switch to a new branch             | `git checkout -b feature-branch`           |
+| `git merge <branch-name>`        | Merge a branch into the current branch        | `git merge feature-branch`                 |
+| `git pull`                       | Fetch and merge changes from the remote repo  | `git pull origin main`                     |
+| `git push`                       | Push changes to the remote repository         | `git push origin main`                     |
+| `git remote -v`                  | Show remote repository URLs                   | `git remote -v`                            |
+| `git reset <file>`               | Unstage a file                                | `git reset file.txt`                       |
+| `git reset --hard <commit>`      | Reset to a specific commit (destructive)      | `git reset --hard abc1234`                 |
+| `git stash`                      | Stash changes in the working directory        | `git stash`                                |
+| `git stash pop`                  | Apply stashed changes                         | `git stash pop`                            |
+| `git tag <tag-name>`             | Create a new tag                              | `git tag v1.0`                             |
+| `git show <tag-name>`            | Show details of a tag                         | `git show v1.0`                            |
+| `git diff`                       | Show changes between commits or working tree  | `git diff`                                 |
+| `git rm <file>`                  | Remove a file from the working directory      | `git rm file.txt`                          |
+| `git config --global user.name`  | Set global username for commits               | `git config --global user.name "John Doe"` |
+| `git config --global user.email` | Set global email for commits                  | `git config --global user.email "email@example.com"` |
+
+git remote -v
