@@ -29,3 +29,6 @@
 | `git config --global user.email` | Set global email for commits                  | `git config --global user.email "email@example.com"` |
 
 git remote -v
+
+
+Git commands changes
